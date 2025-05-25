@@ -1,15 +1,17 @@
 # HexGrid_Godot_4.0
 <u>HexGrid library with functions based on www.redblobgames.com 's implementation:</u>
 
+# Download
 Godot asset store link: https://godotengine.org/asset-library/asset/2292
+
+# Install
 
  - Make an addons folder on your project's (res://) folder and then move HexMap folder to the addons folder
  - Navigate to your project settings -> plugins -> and then add the plugin to your project
 
-<u>Public variables and methods:</u>
+Public variables and methods:
 
-
-Variable - 
+## Variables 
 
   var is_flat: Determines drawing style of flat or pointy topped hex
 
@@ -18,7 +20,7 @@ Variable -
   var origin: The x/y position of the origin of the grid
 
 
-Functions- 
+## Functions 
 
   func add_hex(hex, data): Add new data to an unoccupied hex.
 
@@ -32,17 +34,13 @@ Functions-
 
   func get_wall(hex, direction): Get wall data for a given hex
 
-<u>Rotation Transform Herlpers:</u>
+### Rotation Transform Herlpers:
 
   func rotate_hex_left(hex):
 
   func rotate_hex_right(hex):
 
-
-
-<u>Pixel funcs and things useful to drawing.</u>
-
-
+### Pixel funcs and things useful to drawing
 
   func hex_to_pixel(hex): x,y for a given hex.
 
@@ -54,10 +52,7 @@ Functions-
 
   func hex_corners(hex): Array of Vector2 locations to draw a full hex.
 
-
-<u>Neighbor and Distance Utility Functions</u>
-
-
+### Neighbor and Distance Utility Functions
 
   func neighbor_hex(hex, direction):
 
@@ -66,6 +61,4 @@ Functions-
   func hex_length(hex):
 
   func hex_distance(hex_a, hex_b):
-```
-
    
